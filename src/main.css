@@ -1,0 +1,69 @@
+@tailwind base;
+
+@layer base {
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    h1{
+        @apply text-2xl font-semibold;
+    }
+
+    h4{
+        @apply text-lg font-semibold;
+    }
+
+    label{
+        @apply text-sm;
+    }
+
+
+
+
+
+    input{
+        @apply px-2 py-2 rounded-md border-[0.5px] border-gray-300 text-sm font-medium; 
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+    }
+
+
+    input[type="text"]:focus{
+        @apply outline-none border-red-400;
+        box-shadow: 0 0 5px #dc2626;
+    }
+
+    input[type="text"]::placeholder{
+        @apply text-sm text-gray-400;
+    }
+    
+    input[type="email"]:focus{
+        @apply outline-none border-red-400;
+        box-shadow: 0 0 5px #dc2626;
+    }
+
+    input[type="email"]::placeholder{
+        @apply text-sm text-gray-400;
+    }
+    
+
+  
+    #cancel{
+        @apply text-sm border-[0.5px] border-gray-300 py-2 px-4 rounded-md;
+    }
+
+    #request-payment{
+        @apply text-sm text-white bg-red-500 py-2 px-4 rounded-md;
+    }
+    #request-payment:hover{
+        @apply bg-red-400;
+    }
+
+}
