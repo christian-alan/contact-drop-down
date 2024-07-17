@@ -61,6 +61,7 @@ export default {
     watch:{
         picked(newValue,oldValue){
             if(newValue!=null) {
+                // Push the value into a local store
                 contactIndex.set(newValue)
             }
         }
